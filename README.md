@@ -4,3 +4,4 @@
 - body-parser
 - ejs (templating engine)
 - express
+- CRUD with mysql
