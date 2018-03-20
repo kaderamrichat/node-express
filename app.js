@@ -23,6 +23,15 @@ app.get('/', function(req, res){
   });
 });
 
+app.post('/users/add', function(req, res){
+  var newUSer = {
+    firstName : req.body.first_name,
+    lastName : req.body.last_name,
+    email : req.body.email
+  };
+  console.log(newUSer);
+});
+
 app.listen(3000, function(){
   console.log("Server started on port 3000 ");
 });
